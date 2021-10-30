@@ -1,0 +1,82 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+struct interval{
+    int st;
+    int et;
+};
+
+bool compare(interval i1, interval i2){
+    return i1.st < i2.st;
+}
+
+int main(){
+
+    //SORT PRESENT IN #include<algorithm>
+    //int arr[] = {1, 3, 2, 5, 7, 6};
+    //WE NEED TO SEND TO POINTERS START POINTER AND END POINTER AFTER THE LAST ELEMENT IF LAST INDEX IS 5 PASS ARR+6
+    // sort(arr, arr+6);
+    // for(int i = 0; i < 6; i++){
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+
+    //TO SORT ONLY PART OF THE ARRAY , COMMENT THE ABOVE CODE TO SEE DIFFERENCE
+    // sort(arr+2, arr+6);
+    // for(int i = 0; i < 6; i++){
+    //     cout << arr[i] << " ";
+    // }
+
+    //TO SORT IN DECREASING ORDER
+    // sort(arr, arr+6, greater<int>());
+    // for(int i = 0; i < 6; i++){
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+
+    //SORT BASED ON INTERVALS
+    // interval arr1[] = {{6, 4}, {3, 4}, {4, 6}, {8, 13}};
+    // //let us sort based on start time (st)
+    // sort(arr1, arr1+4, compare);
+    // for(int i = 0; i < 4; i++){
+    //     cout << arr1[i].st << " : " << arr1[i].et << endl;
+    // }
+
+    //BINARY SEARCH FUNCTION
+    //int arr[] = {1, 2, 3, 4, 5, 6, 7};
+    //cout << binary_search(arr, arr+7, 7) << endl; //this prints 1 as 7 is present in arr
+
+    //BINARY SEARCH TO GET INDEX
+    //int arr[] = {1, 2, 3, 5, 6, 7};
+    //cout << lower_bound(arr, arr+6, 3); //this actually returns pointer where 3 is present
+    //cout << endl;
+    //to get index we need to subtract the starting pointer 'arr'
+    //cout << lower_bound(arr, arr+6, 3) - arr;
+    //cout << endl;
+    //if an element we pass as parameter to search is not present in the sorted array it returns the index of the number that is just greater than the input parameter
+    //cout << lower_bound(arr, arr+6, 4) - arr; //output: 3
+    //if there are repeated values it returns the index of first value
+
+    //UPPER BOUND
+    //IT GIVES THE INDEX OF ELEMENT NEXT TO THE INDEX OF PARAMETER WE INPUTED
+    // int arr[] = {1, 2, 3, 5, 6, 7};
+    // cout << upper_bound(arr, arr+6, 3) - arr << endl;
+
+    //INBUILT GCD EUCLID ALGORITHM
+    //cout << __gcd(10, 6) << endl;
+
+    //POWER FUNCTION
+    //cout << pow(2, 5) << endl;
+
+    //SWAP
+    //int x = 10;
+    //int y = 12;
+    //swap(x, y);
+    //cout << x << " " << y << endl;
+    //swap can also be used with vectors
+
+    //MAX AND MIN
+    //cout << max(14, 18) << endl;
+    //cout << min(14, 18) << endl;
+
+}
